@@ -7,6 +7,8 @@ on:
   schedule:
     - cron: '30 02 * * *'   # 8:00 AM IST
     - cron: '00 14 * * *'   # 7:30 PM IST
+    - cron: '00 07 * * *'   # 12 : 30 AM IST Mid Night
+    - cron: '00 10 * * *'   # 3:30 Am IST early moring 
     - cron: '00 06 * * 1-5' # 11:30 PM IST (Mon–Fri)
 
 jobs:
