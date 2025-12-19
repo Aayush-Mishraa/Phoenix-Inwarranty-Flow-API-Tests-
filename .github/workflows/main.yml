@@ -38,10 +38,8 @@ jobs:
             -e QA.postman_environment.json \
             -d testdata.csv \
             -r cli,htmlextra \
-            --reporter-htmlextra-export ./newman/report.html\
-            --reporter-htmlextra-showOnlyFails \
-            --reporter-htmlextra-omitRequestBodies \
-            --reporter-htmlextra-omitResponseBodies
+            --reporter-htmlextra-export ./newman/index.html\
+           
             
       - name: Upload Newman Report
         if: always() #ensure that the archive excuted irrespective wheather the previous step has passed or not
