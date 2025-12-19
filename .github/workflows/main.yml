@@ -41,6 +41,10 @@ jobs:
             -d testdata.csv \
             -r cli,htmlextra \
             --reporter-htmlextra-export ./newman/report.html
+            --reporter-htmlextra-export newman/report.html \
+            --reporter-htmlextra-showOnlyFails \
+            --reporter-htmlextra-omitRequestBodies \
+            --reporter-htmlextra-omitResponseBodies
             
       - name: Upload Newman Report
         if: always() #ensure that the archive excuted irrespective wheather the previous step has passed or not
