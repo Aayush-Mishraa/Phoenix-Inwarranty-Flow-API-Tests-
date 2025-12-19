@@ -7,8 +7,6 @@ on:
   schedule:
     - cron: '30 02 * * *'   # 8:00 AM IST Night
     - cron: '00 14 * * *'   # 7:30 PM IST Moring  
-
-    #the below cron job for better results
     - cron: '30 15 * * *'   # 9:00 PM IST
     - cron: '00 18 * * *'   # 11:30 PM IST 
     - cron: '30 21 * * *'   # 3:00 AM IST (next day)
@@ -40,8 +38,7 @@ jobs:
             -e QA.postman_environment.json \
             -d testdata.csv \
             -r cli,htmlextra \
-            --reporter-htmlextra-export ./newman/report.html
-            --reporter-htmlextra-export newman/report.html \
+            --reporter-htmlextra-export ./newman/report.html\
             --reporter-htmlextra-showOnlyFails \
             --reporter-htmlextra-omitRequestBodies \
             --reporter-htmlextra-omitResponseBodies
