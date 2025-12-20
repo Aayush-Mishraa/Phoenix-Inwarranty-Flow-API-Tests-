@@ -66,7 +66,7 @@ jobs:
           server_port: 465
           username: ${{ secrets.EMAIL_ADDRESS }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Phoenix Inwarranty Flow Test Execution Notification
+          subject: API Test Report Github Action - Phoenix Inwarranty Flow Test Execution 
           to: ayush.am77@gmail.com, aayushmishra026@gmail.com
           from: Aayush from Github Actions <${{ secrets.EMAIL_ADDRESS }}>
           body: |
