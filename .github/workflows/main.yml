@@ -7,12 +7,12 @@ on:
   schedule:
     - cron: '30 02 * * *'   # 8:00 AM IST Night
     - cron: '00 14 * * *'   # 7:30 PM IST Moring  
-    - cron: '30 15 * * *'   # 9:00 PM IST
+    #- cron: '30 15 * * *'   # 9:00 PM IST
     - cron: '00 18 * * *'   # 11:30 PM IST 
-    - cron: '30 21 * * *'   # 3:00 AM IST (next day)
-    - cron: '00 22 * * *'   # 3:30 Am IST early moring 
+    #- cron: '30 21 * * *'   # 3:00 AM IST (next day)
+    #- cron: '00 22 * * *'   # 3:30 Am IST early moring 
     - cron: '00 06 * * 1-5' # 11:30 AM IST (Mon–Fri)
-    - cron: '00 06 * * 4-5' # 11:30 AM IST (Thu–Fri) – Staging Build
+    #- cron: '00 06 * * 4-5' # 11:30 AM IST (Thu–Fri) – Staging Build
 
 jobs:
   run-postman-tests:
@@ -66,9 +66,9 @@ jobs:
           server_port: 465
           username: ${{ secrets.EMAIL_ADDRESS }}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: API Test Report Github Action - Phoenix Inwarranty Flow Test Execution 
-          to: ayush.am77@gmail.com, aayushmishra026@gmail.com
-          from: Aayush from Github Actions <${{ secrets.EMAIL_ADDRESS }}>
+          subject: Phoenix Inwarranty Flow | API Automation Test Report (GitHub Actions) 
+          to: ayush.am77@gmail.com, connecttoayushmishra@gmail.com
+          from: Phoenix Automation | Aayush Mishra <${{ secrets.EMAIL_ADDRESS }}>
           body: |
                Hello,
 
@@ -80,12 +80,18 @@ jobs:
                
                If you have any questions or need further details, please let me know.
                
-               Regards,
-               Aayush MishraSDET
-               Website: https://aayushmishra.tech/
+               Warm regards,  
+               ━━━━━━━━━━━━━━━━━━━━━━━━━━  
+               Aayush Mishra  
+               SDET | Software Development Engineer in Test  
+               Automation • API • CI/CD  
+               https://aayushmishra.tech/  
+               ━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+               
+
               
-                
-          attachments: newman/index.html      
+                 
         
   
           
