@@ -70,16 +70,24 @@ jobs:
           to: ayush.am77@gmail.com, aayushmishra026@gmail.com
           from: Aayush from Github Actions <${{ secrets.EMAIL_ADDRESS }}>
           body: |
-                Hello,
-                Phoneix inwarrenty flow
-                Please find the attached HTML report generated after running the Postman tests via GitHub Actions.
-                Link to live report (GitHub Pages): https://aayush-mishraa.github.io/Phoenix-Inwarranty-Flow-API-Tests-/
-             
-                Regards,
-                GitHub Actions
-                By AAYUSH MISHRA 
-                SDET
-         
+               Hello,
+
+               The Phoenix Inwarranty Flow Postman API tests have been successfully executed via GitHub Actions.
+               
+               Please find the attached HTML test execution report for detailed results.
+               You can also view the live report on GitHub Pages using the link below:
+               https://aayush-mishraa.github.io/Phoenix-Inwarranty-Flow-API-Tests-/
+               
+               If you have any questions or need further details, please let me know.
+               
+               Regards,
+               Aayush MishraSDET
+               Website: https://aayushmishra.tech/
+              
+                
+          attachments: newman/index.html      
+        
+  
           
           
          
