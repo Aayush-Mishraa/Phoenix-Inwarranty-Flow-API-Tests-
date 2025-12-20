@@ -26,6 +26,9 @@ All deployments:
 Latest HTML report (GitHub Pages):
 [https://aayush-mishraa.github.io/Phoenix-Inwarranty-Flow-API-Tests-/](https://aayush-mishraa.github.io/Phoenix-Inwarranty-Flow-API-Tests-/)
 
+![Postman Report](https://raw.githubusercontent.com/Aayush-Mishraa/Phoenix-Inwarranty-Flow-API-Tests-/static-content/Report.png)
+
+
 ---
 
 ## About Me
