@@ -46,25 +46,24 @@ console.log("Entering the Invalid credentials")
 
 **Impact**: Reduces execution time and improves log readability.
 
-#### 1.3 Eliminated Unnecessary Variable Assignments
-**Problem**: Intermediate variables were created unnecessarily in pre-request scripts.
+#### 1.3 Simplified Pre-request Scripts  
+**Problem**: Unnecessary intermediate variables and console logging in pre-request scripts.
 
-**Solution**: Direct assignment to Postman variables:
+**Solution**: Removed debug logging and unnecessary intermediate variables:
 ```javascript
 // Before
+console.log("Entering the Invalid credentials")
 var invalidUserName = "iamfd123"
 var invalidPassword = "pass123"
 pm.variables.set("invalidUserName", invalidUserName);
 pm.variables.set("invalidPassword", invalidPassword);
 
 // After
-const invalidUserName = "iamfd123";
-const invalidPassword = "pass123";
-pm.variables.set("invalidUserName", invalidUserName);
-pm.variables.set("invalidPassword", invalidPassword);
+pm.variables.set("invalidUserName", "iamfd123");
+pm.variables.set("invalidPassword", "pass123");
 ```
 
-**Impact**: Minor performance improvement and better code quality using const instead of var.
+**Impact**: Cleaner code, removed console logging overhead, eliminated unnecessary variable declarations.
 
 #### 1.4 Optimized Repetitive Property Checks
 **Problem**: Multiple individual property checks were verbose and inefficient.

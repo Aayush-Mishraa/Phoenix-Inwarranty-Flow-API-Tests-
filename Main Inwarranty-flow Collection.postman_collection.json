@@ -167,11 +167,8 @@
 					"listen": "prerequest",
 					"script": {
 						"exec": [
-							"const invalidUserName = \"iamfd123\";\r",
-							"const invalidPassword = \"pass123\";\r",
-							"\r",
-							"pm.variables.set(\"invalidUserName\", invalidUserName);\r",
-							"pm.variables.set(\"invalidPassword\", invalidPassword);"
+							"pm.variables.set(\"invalidUserName\", \"iamfd123\");\r",
+							"pm.variables.set(\"invalidPassword\", \"pass123\");"
 						],
 						"type": "text/javascript",
 						"packages": {}
