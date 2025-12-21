@@ -27,10 +27,17 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Cache global npm packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-global
+          restore-keys: |
+            ${{ runner.os }}-node-global-
+
       - name: Install Newman and HTML Extra globally
         run: |
-          npm install -g newman
-          npm install -g newman-reporter-htmlextra
+          npm install -g newman newman-reporter-htmlextra
 
       - name: Run Postman Collection
         run: |
