@@ -133,9 +133,9 @@ console.log(pm.iterationData.get("first_name"))
   uses: actions/cache@v4
   with:
     path: ~/.npm
-    key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-global
+    key: ${{ runner.os }}-newman-v1
     restore-keys: |
-      ${{ runner.os }}-node-global-
+      ${{ runner.os }}-newman-
 ```
 
 **Impact**: Reduces workflow execution time by 30-60 seconds per run by caching npm packages.

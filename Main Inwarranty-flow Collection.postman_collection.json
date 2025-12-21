@@ -69,9 +69,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -4655,9 +4653,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -4714,9 +4710,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -4773,9 +4767,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -4843,9 +4835,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -4909,9 +4899,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -9093,9 +9081,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -11797,9 +11783,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -13901,9 +13885,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"exec": [
-							""
-						],
+						"exec": [],
 						"type": "text/javascript",
 						"packages": {}
 					}
@@ -14478,9 +14460,7 @@
 			"script": {
 				"type": "text/javascript",
 				"packages": {},
-				"exec": [
-					""
-				]
+				"exec": []
 			}
 		},
 		{
@@ -14488,9 +14468,7 @@
 			"script": {
 				"type": "text/javascript",
 				"packages": {},
-				"exec": [
-					""
-				]
+				"exec": []
 			}
 		}
 	],
