@@ -16,7 +16,7 @@ on:
 
 jobs:
   run-postman-tests:
-    runs-on: ec2 github runner #this is for run in AWS server #ubuntu-latest
+    runs-on: ubuntu-latest     #ec2 github runner -this is for run in AWS server #ubuntu-latest this for to run on git action only
 
     steps:
       - name: Checkout the code
