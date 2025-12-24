@@ -9,7 +9,7 @@ on:
     - cron: '00 14 * * *'   # 7:30 PM IST Moring  
     #- cron: '30 15 * * *'   # 9:00 PM IST
     - cron: '00 18 * * *'   # 11:30 PM IST 
-    #- cron: '30 21 * * *'   # 3:00 AM IST (next day)
+    - cron: '30 21 * * *'   # 3:00 AM IST (next day)
     #- cron: '00 22 * * *'   # 3:30 Am IST early moring 
     - cron: '00 06 * * 1-5' # 11:30 AM IST (Mon–Fri)
     #- cron: '00 06 * * 4-5' # 11:30 AM IST (Thu–Fri) – Staging Build
