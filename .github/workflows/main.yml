@@ -6,13 +6,32 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '30 02 * * *'   # 8:00 AM IST Night
-    - cron: '00 14 * * *'   # 7:30 PM IST Moring  
-    #- cron: '30 15 * * *'   # 9:00 PM IST
-    - cron: '00 18 * * *'   # 11:30 PM IST 
-    - cron: '30 21 * * *'   # 3:00 AM IST (next day)
-    #- cron: '00 22 * * *'   # 3:30 Am IST early moring 
-    - cron: '00 06 * * 1-5' # 11:30 AM IST (Mon–Fri)
-    #- cron: '00 06 * * 4-5' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 14 * * 0-1'   # 7:30 PM IST Moring  
+    # - cron: '30 15 * * *'   # 9:00 PM IST
+    # - cron: '00 18 * * *'   # 11:30 PM IST 
+    # - cron: '30 21 * * *'   # 3:00 AM IST (next day)
+    # - cron: '00 22 * * *'   # 3:30 Am IST early moring 
+    - cron: '00 01 * * 2-5' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 10 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 09 * * 2-5' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 04 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 06 * * 2-5' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 05 * * 2-4' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 06 * * 1-2' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 08 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    
+    - cron: '00 12 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 11 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 13 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 16 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 17 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 18 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 19 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 20 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '00 02 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '00 03 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
+    - cron: '30 02 * * 2-3' # 11:30 AM IST (Mon–Fri)
+    - cron: '40 05 * * 2-3' # 11:30 AM IST (Thu–Fri) – Staging Build
 
 jobs:
   run-postman-tests:
